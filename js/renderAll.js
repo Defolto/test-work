@@ -1,5 +1,25 @@
-const products = new XMLHttpRequest();
+let products;
+try {
+    products = new XMLHttpRequest();
+} catch (el) {
+    try {
+        products = new ActiveXObject("Msxml2.XMLHTTP")
+    } catch(e2){
+        try {
+            products = new ActiveXObject("Microsoft.XMLHTTP")
+        } catch (e3) {
+            alert(e3)
+        }
+    }
+}
+
 const container_product = document.querySelector('.container-product');
+
+// Создание исключения
+message => {
+    this.message = message;
+    this.name = "Исключение при запросе";
+}
 
 // AJAX
 products.onreadystatechange = function() {

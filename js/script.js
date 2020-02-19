@@ -36,6 +36,8 @@ function setFavorite(id){
             }else{
                 document.getElementById(`like${id}`).setAttribute('src', 'img/like.svg');
             }
+        }else{
+            throw new UserException("Ошибка при добавлении в избранное");
         }
     };
 
@@ -123,6 +125,8 @@ document.getElementById('show').addEventListener('click', function(){
                 </div>`;
                 container_product.insertAdjacentHTML('beforeend', product_card);
             }
+        }else{
+            throw new UserException("Ошибка при рендере с фильтрами");
         }
     };
     

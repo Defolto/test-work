@@ -14,6 +14,7 @@ body{
 }
 
 .btn{
+    display: flex;
     padding: 8px 15px;
     font-family: ProximaNova_Regular, sans-serif;
     font-size: 14px;
@@ -33,10 +34,12 @@ body{
     }
 
     .cart{
+        margin: auto 0;
         margin-right: 10px;
     }
 
     &_filter{
+        display: inline-block;
         width: 100%;
         padding: 9px 15px 10px;
         font-size: 13px;
@@ -44,6 +47,7 @@ body{
     }
 
     &_filter-white{
+        display: inline-block;
         width: 100%;
         padding: 9px 15px 10px;
         margin-top: 10px;
@@ -63,6 +67,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    // TODO: Заменить ширину тут, в случае, если нужно расширить
     width: 1280px;
     padding: 0 5px;
     margin: 0 auto;
@@ -71,12 +76,13 @@ body{
     &-product{
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         width: 75%;
 
         .product-card{
             display: flex;
             flex-direction: column;
-            width: 33%;
+            width: 30%;
             padding: 15px 25px 30px;
             margin: 5px;
             background-color: white;
@@ -184,6 +190,7 @@ body{
             }
 
             &__bonus{
+                padding-top: 3px;
                 margin: 0;
                 font-family: ProximaNova_Light, sans-serif;
                 font-size: 12px;

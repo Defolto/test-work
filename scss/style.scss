@@ -13,14 +13,9 @@ body{
     src: url('../font/ProximaNova_Regular.ttf');
 }
 
-@font-face{
-    font-family: ProximaNova_Semibold;
-    src: url('../font/ProximaNova_Semibold.ttf');
-}
-
 .btn{
     padding: 8px 15px;
-    font-family: ProximaNova_Regular;
+    font-family: ProximaNova_Regular, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: normal;
@@ -104,7 +99,7 @@ body{
             }
 
             &__vendor-code{
-                font-family: ProximaNova_Light;
+                font-family: ProximaNova_Light, sans-serif;
                 font-size: 12px;
                 font-style: normal;
                 font-weight: 300;
@@ -118,7 +113,7 @@ body{
                 margin: 20px auto;
             }
 
-            &__in-stock{
+            &__availability{
                 display: flex;
                 flex-direction: row;
 
@@ -130,7 +125,7 @@ body{
                 &-text{
                     padding-left: 5px;
                     margin: 0;
-                    font-family: ProximaNova_Light;
+                    font-family: ProximaNova_Light, sans-serif;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 300;
@@ -142,7 +137,7 @@ body{
             }
 
             &__title{
-                font-family: ProximaNova_Regular;
+                font-family: ProximaNova_Regular, sans-serif;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: normal;
@@ -152,14 +147,14 @@ body{
                 letter-spacing: normal;
             }
 
-            &__specifications{
+            &__params{
                 padding: 0;
                 margin: 0;
                 list-style: none;
 
-                .characteristic{
+                .param{
                     padding: 3px 0;
-                    font-family: ProximaNova_Light;
+                    font-family: ProximaNova_Light, sans-serif;
                     font-size: 12px;
                     font-style: normal;
                     font-weight: 300;
@@ -168,7 +163,7 @@ body{
                     color: #7e7e7e;
                     letter-spacing: normal;
 
-                    .characteristic_individ{
+                    &__value{
                         padding-left: 10px;
                         color: #333;
                     }
@@ -178,7 +173,7 @@ body{
             &__price{
                 margin: 0;
                 margin-top: 20px;
-                font-family: ProximaNova_Regular;
+                font-family: ProximaNova_Regular, sans-serif;
                 font-size: 25px;
                 font-style: normal;
                 font-weight: normal;
@@ -190,7 +185,7 @@ body{
 
             &__bonus{
                 margin: 0;
-                font-family: ProximaNova_Light;
+                font-family: ProximaNova_Light, sans-serif;
                 font-size: 12px;
                 font-style: normal;
                 font-weight: 300;
@@ -200,7 +195,7 @@ body{
                 letter-spacing: normal;
             }
 
-            &__buy{
+            &__purchase{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -236,7 +231,7 @@ body{
         }
 
         &__title{
-            font-family: ProximaNova_Regular;
+            font-family: ProximaNova_Regular, sans-serif;
             font-size: 17px;
             font-style: normal;
             font-weight: normal;
@@ -259,7 +254,7 @@ body{
 
                 &-name{
                     margin: 0;
-                    font-family: ProximaNova_Light;
+                    font-family: ProximaNova_Light, sans-serif;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 300;

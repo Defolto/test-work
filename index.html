@@ -7,58 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="container-product">
-            <div class="product-card">
-
-                <div class="product-card__header">
-                    <div class="product-card__stars">
-                        <img class="star" src="img/star.svg" alt="">
-                        <img class="star" src="img/star.svg" alt="">
-                        <img class="star" src="img/star.svg" alt="">
-                        <img class="star" src="img/star__pass.svg" alt="">
-                        <img class="star" src="img/star__pass.svg" alt="">
-                    </div>
-                    <div class="product-card__vendor-code">
-                        Арт. <span>34534345</span>
-                    </div>
-                </div>
-
-                <img src="img/image.jpg" class="product-card__img" alt="Товар">
-
-                <div class="product-card__in-stock">
-                    <img src="img/check.svg" alt="">
-                    <p class="product-card__in-stock-text">В наличии</p>
-                </div>
-
-                <h2 class="product-card__title">Canon PowerShot SX400 IS с улучшенной матрицей и объективом</h2>
-
-                <ul class="product-card__specifications">
-                    <li class="characteristic">Физический размер <span class="characteristic_individ">23.2 x 15.2 мм</span></li>
-                    <li class="characteristic">Диафрагма <span class="characteristic_individ">CMOS</span></li>
-                    <li class="characteristic">Формат записи <span class="characteristic_individ">RAW, JPEG, MP4 и другие</span></li>
-                    <li class="characteristic">Фокусное расстояние <span class="characteristic_individ">18-55 мм.</span></li>
-                </ul>
-
-                <h3 class="product-card__price">49 999 руб.</h3>
-                <p class="product-card__bonus">+490 бонусов</p>
-
-                <div class="product-card__buy">
-                    <button class="btn">
-                        <img class="cart" src="img/cart.svg">
-                        Купить
-                    </button>
-                    <div class="product-card__like-compare">
-                        <img class="favorite" src="img/like.svg" alt="">
-                        <img class="comparsion" src="img/comparsion.svg" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <main class="container">
+        <section class="container-product">
+            
+        </section>
         <div class="container-filter">
-            <button class="btn btn_filter">Показать результат</button>
-            <button class="btn btn_filter-white">Очистить фильтр</button>
+            <button class="btn btn_filter" id="show">Показать результат</button>
+            <button class="btn btn_filter-white" id="clear">Очистить фильтр</button>
 
             <div class="container-filter__filters">
                 <p class="container-filter__title">Производитель</p>
@@ -146,9 +101,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
+    <script src="js/renderAll.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/render.js"></script>
 </body>
 </html>

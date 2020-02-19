@@ -10,6 +10,9 @@ To start this project, follow these instructions:
 3) Works fine in chrome, opera, edge, firefox. I don’t know about safari, since there is no way to check
 4) Scripts are written on the standard ES6+
 5) Layout is not adaptive and works with a strict width of 1280px. In case you need to expand, then replace in the SCSS, in the class container, the width is the min-width
+6) Used flexbox, БЭМ
+7) Used semantic tags to the best of my knowledge.
+8) HTML code is neat and readable
 
 ## possible mistake
 1) I have little experience, so I could do stupid things in REST API
